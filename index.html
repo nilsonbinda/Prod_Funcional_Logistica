@@ -13,6 +13,7 @@
             font: inherit;
             vertical-align: baseline;
         }
+
         .div-iframe {
             display: none;
             width: 100%;
@@ -37,6 +38,33 @@
             background-color: blue;
             animation: loading 30s linear infinite;
         }
+
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .spinner {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid blue;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        .content {
+            display: none;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
         @keyframes loading {
             0% { width: 0; }
             100% { width: 100%; }
@@ -46,57 +74,70 @@
     </style>
 </head>
 <body>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <main class="content">
 
-    <div class="div-iframe active">
-        <div class="loading-bar"></div>
-        <iframe id="iframe1" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=2c84c1ac95196cac52e0"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe2" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=0bc2ad172dbc515b645d"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe3" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=2af3e2ffa4bd7f88414a"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe4" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=77bace1b4310927d5dbb"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe5" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=ab5d2dba22d5f8a14fc2"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe6" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=ee357e10277701dce452"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe7" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=f7d7a34605e6f5b6ff7b"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe8" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=de941203f85adb98103b"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe9" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=dd1d2199031c5d7cd5ee"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe10" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=6157f4bcb03c81c1b114"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe11" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=b7377e6d33c571a14ce6"></iframe>
-    </div>
-    <div class="div-iframe">
-        <div class="loading-bar"></div>
-        <iframe id="iframe12" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=1450d56e712a2394a5be"></iframe>
-    </div>
+        <div class="div-iframe active">
+            <div class="loading-bar"></div>
+            <iframe id="iframe1" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=2c84c1ac95196cac52e0"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe2" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=0bc2ad172dbc515b645d"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe3" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=2af3e2ffa4bd7f88414a"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe4" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=77bace1b4310927d5dbb"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe5" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=ab5d2dba22d5f8a14fc2"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe6" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=ee357e10277701dce452"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe7" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=f7d7a34605e6f5b6ff7b"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe8" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=de941203f85adb98103b"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe9" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=dd1d2199031c5d7cd5ee"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe10" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=6157f4bcb03c81c1b114"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe11" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=b7377e6d33c571a14ce6"></iframe>
+        </div>
+        <div class="div-iframe">
+            <div class="loading-bar"></div>
+            <iframe id="iframe12" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=1450d56e712a2394a5be"></iframe>
+        </div>
+
+    </main>
 
     <script>
+
+
+        window.addEventListener('load', function() {
+            document.querySelector('.spinner-container').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        });
+        
         let currentIframe = 0;
         const iframes = document.querySelectorAll('.div-iframe');
         const totalIframes = iframes.length;
