@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Logistica - Unimarka</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        .div-iframe {
+            display: none;
+            width: 100%;
+            height: 100vh;
+        }
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+
+        .div-iframe.active {
+            display: block;
+        }
+
+        .loading-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: blue;
+            animation: loading 30s linear infinite;
+        }
+        @keyframes loading {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="div-iframe active">
+        <div class="loading-bar"></div>
+        <iframe id="iframe1" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=2c84c1ac95196cac52e0"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe2" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=0bc2ad172dbc515b645d"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe3" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=2af3e2ffa4bd7f88414a"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe4" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=77bace1b4310927d5dbb"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe5" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=ab5d2dba22d5f8a14fc2"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe6" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=ee357e10277701dce452"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe7" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=f7d7a34605e6f5b6ff7b"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe8" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=de941203f85adb98103b"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe9" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=dd1d2199031c5d7cd5ee"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe10" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=6157f4bcb03c81c1b114"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe11" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=b7377e6d33c571a14ce6"></iframe>
+    </div>
+    <div class="div-iframe">
+        <div class="loading-bar"></div>
+        <iframe id="iframe12" src="https://app.powerbi.com/reportEmbed?reportId=29a7f4c1-53a9-422f-b8e1-c70824af5102&appId=a883499e-c026-4ef4-b196-3b2b7e40e063&autoAuth=true&ctid=4f5e2c41-2faa-4fa6-8396-99363f369336&pageName=1450d56e712a2394a5be"></iframe>
+    </div>
+
+    <script>
+        let currentIframe = 0;
+        const iframes = document.querySelectorAll('.div-iframe');
+        const totalIframes = iframes.length;
+
+        function rotateIframes() {
+            iframes[currentIframe].classList.remove('active');
+            currentIframe = (currentIframe + 1) % totalIframes;
+            iframes[currentIframe].classList.add('active');
+        }
+
+        setInterval(rotateIframes, 30000); 
+
+        setInterval(() => {
+            location.reload();
+        }, 600000);
+        
+    </script>
+</body>
+</html>
